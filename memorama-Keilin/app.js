@@ -70,4 +70,3 @@ imagenesDiv.map((etiquetaDiv) => {
   elementoDiv.classList.add(etiquetaDiv.claseDiv);
   document.querySelector("#contenedor").appendChild(elementoDiv);
 });
-cd
