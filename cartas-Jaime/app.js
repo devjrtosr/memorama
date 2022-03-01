@@ -1,4 +1,4 @@
-const Cartas = [
+const cartas = [
     {
         PrimerasOchoCartas: 'div',
         clasesPrimerasOchoCartas: ['boton','primerasOchoCartas']
