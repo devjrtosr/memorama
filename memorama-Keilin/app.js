@@ -1,72 +1,24 @@
-const imagenesDiv = [
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-  {
-    elementoDiv: "div",
-    claseDiv: "contenedor-tarjeta",
-  },
-];
+const contenedor = document.querySelector("#contenedor");
 
-imagenesDiv.map((etiquetaDiv) => {
-  const elementoDiv = document.createElement(etiquetaDiv.elementoDiv);
-  elementoDiv.classList.add(etiquetaDiv.claseDiv);
-  document.querySelector("#contenedor").appendChild(elementoDiv);
-});
+const iniciarJuego = () => {
+  window.addEventListener("DOMContentLoaded", () => {
+    cargarCartas();
+  });
+};
+
+document.addEventListener("click", () => {});
+
+const cargarCartas = async () => {
+  const respuesta = await fetch("cartas.json");
+  const datos = await respuesta.json();
+  datos.sort(() => 0.5 - Math.random());
+  let carta = "";
+  datos.map((etiqueta) => {
+    carta += `<div class=${etiqueta.claseDiv}>
+                <img class=${etiqueta.claseImg} src=${etiqueta.src} alt="Imagen de lenguajes aleatorios" />
+              </div>`;
+    contenedor.innerHTML = carta;
+  });
+};
+
+iniciarJuego();
