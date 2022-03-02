@@ -1,0 +1,11 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.divMemorama {
+  background-color: #e5989b;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
