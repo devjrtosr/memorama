@@ -1,0 +1,14 @@
+.boton{
+    width: 100px;
+    height: 200px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+}
+
+.primerasOchoCartas{
+    background-color: rgb(117, 231, 94);
+}
+.ultimasOchoCartas{
+    background-color: rgb(125, 96, 230);
+}
