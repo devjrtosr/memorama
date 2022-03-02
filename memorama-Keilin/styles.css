@@ -1,0 +1,15 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% auto;
+  width: 700px;
+}
+
+.contenedor-tarjeta {
+  background-color: #90e0ef;
+  border: 2px solid #0077b6;
+  border-radius: 10px;
+  height: 150px;
+  margin: 10px;
+  width: 150px;
+}
