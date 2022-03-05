@@ -1,4 +1,27 @@
-.botonfila {
-  height: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.backgr {
+  background: linear-gradient(to right, blue, pink);
+}
+.contenedor {
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+}
+.contenedor-cartas {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 150px;
+}
+.card {
+  height: 170px;
   width: 100px;
+  margin: 20px;
 }
