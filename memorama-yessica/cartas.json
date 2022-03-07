@@ -1,0 +1,98 @@
+[
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/cpluspluslogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/cpluspluslogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/css3logo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/css3logo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/golanglogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/golanglogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/html5logo.jpg",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/html5logo.jpg",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/javalogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/javalogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/jslogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/jslogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/phplogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/phplogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/pythonlogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  },
+  {
+    "elementoDiv": "div-carta",
+    "claseCarta": "carta",
+    "src": "../assets/img/pythonlogo.png",
+    "defectoImg": "../assets/img/cover.jpg"
+  }
+]

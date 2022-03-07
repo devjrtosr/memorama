@@ -1,21 +1,30 @@
-#contenedor{
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 700px;
 }
-
-.carta{
+.div-carta{
     width: 150px;
     height: 150px;
     margin: 5px;
     border: none;
-    background-color: aqua;
     border-radius: 5px;
     border-color: black;
     border-width: 1.5px;
     border-style: solid;
+}
+.carta{
+    height: 90%;
+    margin: 5%;
+    width: 90%;
 }
 
 
