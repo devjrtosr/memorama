@@ -1,95 +1,24 @@
-const num_max_cartas = 16; 
+const contenedor = document.querySelector("#contenedor");
 
-const cartas = [
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-    {
-        elementoDiv: "div",
-        claseCarta: ["carta"],
-        classImagen: "assets/carta.jpg",
-    },
-];
+const iniciarJuego = () => {
+  window.addEventListener("DOMContentLoaded", () => {
+    cargarCartas();
+  });
+};
 
-cartas.map((carta) =>{
-    const cartatemporal = document.createElement(carta.elementoDiv);
-    // const imagen = document.createElement(carta.elementoDiv);
-    // imagen.scr = carta.classImagen;
-    cartatemporal.classList.add(...carta.claseCarta);
-    document.querySelector("#contenedor").appendChild(cartatemporal);
-    // cartatemporal.appendChild(imagen);
-    
-});
+document.addEventListener("click", () => {});
 
+const cargarCartas = async () => {
+  const respuesta = await fetch("cartas.json");
+  const datos = await respuesta.json();
+  datos.sort(() => 0.5 - Math.random());
+  let carta = "";
+  datos.map((etiqueta) => {
+    carta += `<div class=${etiqueta.elementoDiv}>
+                <img class=${etiqueta.claseCarta} src=${etiqueta.src} alt="Imagen de lenguajes aleatorios" />
+              </div>`;
+    contenedor.innerHTML = carta;
+  });
+};
+
+iniciarJuego();
